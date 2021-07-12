@@ -4,6 +4,6 @@ if [ ! -f ".env" ]; then
   cp .env.example .env
 fi
 
-npm install
+npm ci
 npm run typeorm migration:run
 npm run start:dev
